@@ -10,16 +10,18 @@
     background: linear-gradient(135deg, rgba(255, 38, 9, 0.3), rgba(17, 0, 124, 0.3));
     /* margin: 100px auto 0; */
     /* border-radius: 20px; */
-    padding: 40px 35px;
+    padding: 20px 20px;
     text-align: center;
 }
+  
 h2 {
-    font-style: italic;
+    font-family: 'dangrek', sans-serif;
     font-size: 60px;
-    background: linear-gradient(135deg, #ff2609, #11007c);
+    background: linear-gradient(135deg, #93f8ff, #7056ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 body{
     background: hsl(147, 97%, 76%);
     background-image: url('./images/a\ dream\ vacation\ on.jpg\ \(2\).jpg');
