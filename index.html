@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Is It Raining?</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
+<header class="header">
+    <h2>Is It Raining?</h2></header>
 <body>
     <div class="card">
         <div class="search">
@@ -90,6 +91,21 @@
                 searchBtn.addEventListener("click", ()=>{
                     checkWeather(searchBox.value);
                 })
+
+                 
+    // add click functionality to enter key
+    function handleKeyPress(event) {
+        if (event.keyCode === 13) { 
+            searchBtn.click(); 
+        }
+    }
+
+    // event listener for when enter is pressed
+    searchBox.addEventListener("keypress", handleKeyPress);
+
+    searchBtn.addEventListener("click", () => {
+        checkWeather(searchBox.value);
+    });
 
             </script>
 </body>
